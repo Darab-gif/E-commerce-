@@ -1,0 +1,40 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  background-image: url("./background2.jpg");
+  background-repeat: no-repeat;
+  background-position: 60px;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+}
+
+input[type="email"] {
+  width: 37%;
+  text-align: center;
+  border-radius: 38px;
+  outline: none;
+  border: none;
+}
+
+.section-btn {
+  padding: 15px;
+  width: 10%;
+  background-color: #00ff20;
+  color: #fff;
+  border-radius: 38px;
+  border: none;
+}
+
+.section-p {
+  font-size: 23px;
+  margin-top: 0;
+  font-weight: 900;
+}
+
+.section-h1 {
+  font-weight: 700;
+  margin-bottom: 0;
+}

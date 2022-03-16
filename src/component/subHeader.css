@@ -1,0 +1,53 @@
+.subHeader {
+  margin-top: 30px;
+  background: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 350px;
+  border: 1px solid cyan;
+  font-weight: 100;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  border: 2px solid cyan;
+}
+
+input[type="button"] {
+  width: 90px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sub-img img {
+  margin-left: 100px;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.sub-cart {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.sub-cart span {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  bottom: 30px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  float: right;
+  font-size: 16px;
+  font-weight: 600;
+}

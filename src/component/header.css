@@ -1,0 +1,20 @@
+.header-nav {
+  position: sticky;
+  box-shadow: 0px 10px 20px #ccc;
+  margin-bottom: 10px;
+  background: rgb(0, 210, 10);
+  height: 35px;
+  width: 100%;
+}
+.header-ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-ul li {
+  list-style: none;
+  color: #fff;
+  margin-top: -25px;
+  cursor: pointer;
+}
