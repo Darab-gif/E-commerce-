@@ -45,6 +45,20 @@ const clothOBJ = [
     imageURL: "./image/cloth6.jpg",
     review: "Quality",
   },
+  {
+    id: 7,
+    name: "Versace",
+    price: 40,
+    imageURL: "./image/cloth7.jpg",
+    review: "Quality",
+  },
+  {
+    id: 8,
+    name: "Versace",
+    price: 40,
+    imageURL: "./image/cloth8.jpg",
+    review: "Quality",
+  },
 ];
 
 const Cloth = ({ id, name, price, imageURL, review }) => {
