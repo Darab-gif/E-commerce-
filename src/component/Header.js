@@ -7,9 +7,8 @@ const Header = () => {
     <header className="header">
       <nav className="header-nav">
         <ul className="header-ul">
-          <li>
+          <li className="head">
             <h2
-              className="header-h2"
               style={{
                 fontFamily: "monospace",
                 fontSize: "30px",
@@ -19,8 +18,10 @@ const Header = () => {
               Darab Collection
             </h2>
           </li>
-          <li style={{ marginLeft: "2px" }}>info@darab-collection.com</li>
-          <li style={{ marginRight: "30px" }}>
+          <li className="mail" style={{ marginLeft: "2px" }}>
+            info@darab-collection.com
+          </li>
+          <li className="media" style={{ marginRight: "30px" }}>
             <Media />
           </li>
         </ul>

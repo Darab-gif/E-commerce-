@@ -24,12 +24,14 @@ const ShowCart = ({ id, name, quantity, price, imageURL, total }) => {
       <p>${price} /-</p>
       <p>x{quantity}</p>
       <article>Total ${total}</article>
-      <button className="cart-actions" onClick={removeHandler}>
-        -
-      </button>
-      <button className="cart-actions" onClick={addHandler}>
-        +
-      </button>
+      <div className="btn">
+        <button className="cart-actions" onClick={removeHandler}>
+          -
+        </button>
+        <button className="cart-actions" onClick={addHandler}>
+          +
+        </button>
+      </div>
     </div>
   );
 };
