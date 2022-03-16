@@ -13,6 +13,18 @@
   margin-top: 60px;
 }
 
+.contact-phone {
+  margin-left: 70px;
+  text-align: center;
+}
+
+.span-add {
+  margin-left: 50px;
+}
+.span-h2 {
+  margin-left: 50px;
+}
+
 .contact-head {
   display: flex;
   justify-content: space-between;
@@ -29,6 +41,7 @@
     width: 250px;
     box-shadow: 5px 5px 10px #ccc;
     text-align: center;
+    margin-left: 52px;
     border-radius: 38px;
     margin-top: 20px;
   }
@@ -42,7 +55,7 @@
     text-align: center;
     border-radius: 38px;
     margin-top: 20px;
-    margin-left: 90px;
+    margin-left: 52px;
   }
   .contact-mail {
     height: 300px;
@@ -51,7 +64,7 @@
     text-align: center;
     border-radius: 38px;
     margin-top: 20px;
-    margin-left: 90px;
+    margin-left: 52px;
   }
   .span-mail {
     margin-left: 90px;
@@ -60,7 +73,9 @@
   .span-mail p {
     margin-right: 30px;
   }
-
+  .span-add {
+    margin-left: 90px;
+  }
   .contact-phone:hover {
     box-shadow: 10px 10px 20px #ccc;
   }

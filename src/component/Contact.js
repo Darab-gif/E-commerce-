@@ -12,7 +12,7 @@ library.add(faPhone, faLandmark, faMailBulk);
 const Contact = () => {
   return (
     <div className="contact-head">
-      <div style={{ marginLeft: "100px" }} className="contact-phone">
+      <div className="contact-phone">
         <span className="span-phone">
           <FontAwesomeIcon icon={faPhone} size="2x" />
         </span>
@@ -20,13 +20,13 @@ const Contact = () => {
         <p>+2348130396203</p>
       </div>
       <div className="contact-add">
-        <span style={{ marginLeft: "70px" }} className="span-add">
+        <span className="span-add">
           <FontAwesomeIcon icon={faLandmark} size="2x" />
         </span>
-        <h2 style={{ textAlign: "center" }}>Address</h2>
+        <h2 className="span-h2">Address</h2>
         <p>No 23, Sawmill Abaletu,Oyo State,Nigeria</p>
       </div>
-      <div style={{ marginRight: "30px" }} className="contact-mail">
+      <div className="contact-mail">
         <span className="span-mail">
           <FontAwesomeIcon icon={faMailBulk} size="2x" />
         </span>
