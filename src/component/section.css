@@ -15,6 +15,7 @@ input[type="email"] {
   text-align: center;
   border-radius: 38px;
   outline: none;
+  padding: 15px;
   border: none;
 }
 

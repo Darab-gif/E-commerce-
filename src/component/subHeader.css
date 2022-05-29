@@ -11,6 +11,7 @@ input[type="text"] {
   border: 1px solid cyan;
   font-weight: 100;
   border-radius: 5px;
+  padding: 15px;
 }
 
 input[type="text"]:focus {
@@ -22,6 +23,8 @@ input[type="button"] {
   background: #000;
   color: #fff;
   cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .sub-img img {
@@ -59,26 +62,28 @@ input[type="button"] {
     position: relative;
   }
   .sub-img {
-    margin-left: -70px;
-    margin-top: -10px;
+    margin-left: -90px;
+    margin-top: -30px;
   }
   .input {
     display: block;
     position: relative;
     width: 100%;
+    margin-top: 20px;
   }
   input[type="text"] {
     width: 100%;
+    margin-left: 10px;
   }
   input[type="button"] {
     position: absolute;
-    left: 241px;
+    left: 230px;
     top: 0;
   }
   .sub-cart {
     position: absolute;
-    top: 20px;
-    left: 300px;
+    top: 10px;
+    left: 264px;
     height: 30px;
   }
   .sub-cart span {
