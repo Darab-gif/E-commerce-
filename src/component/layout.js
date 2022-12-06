@@ -5,10 +5,11 @@ import "./layout.css";
 import Section from "./Section";
 import Contact from "./Contact";
 import Footer from "./footer";
-import Material from "./Cloth";
-import Leather from "./Shoe";
+import Material from "../component/Cloth/Cloth";
+import Leather from "../component/Shoe/Shoe";
 import CartItem from "./showCart";
 import { useSelector } from "react-redux";
+import WristWatch from "./Watch/WristWatch";
 
 const Layout = () => {
   const showCart = useSelector((state) => state.cart.showCart);
@@ -22,13 +23,22 @@ const Layout = () => {
         <Material />
         <div
           style={{
-            height: "5px",
+            height: "2px",
             width: "100%",
             background: "rgb(0, 210, 10)",
             marginTop: "60px",
           }}
         ></div>
         <Leather />
+        <div
+          style={{
+            height: "2px",
+            width: "100%",
+            background: "rgb(0, 210, 10)",
+            marginTop: "60px",
+          }}
+        ></div>
+        <WristWatch />
         <Section />
         <Contact />
         <Footer />

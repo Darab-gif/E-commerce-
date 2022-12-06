@@ -1,80 +1,92 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { cartAction } from "../store/cart-slice";
+import { cartAction } from "../../store/cart-slice";
+import { nanoid } from "@reduxjs/toolkit";
+import {
+  cloth1,
+  cloth2,
+  cloth3,
+  cloth4,
+  cloth5,
+  cloth6,
+  cloth7,
+  cloth8,
+} from "../../assets";
 import "./cloth.css";
 const clothOBJ = [
   {
-    id: 1,
+    id: nanoid(),
     name: "Versace",
     price: 40,
-    imageURL: "./image/cloth1.jpg",
+    image: cloth1,
     review: "Quality",
   },
   {
-    id: 2,
+    id: nanoid(),
     name: "Versace",
     price: 40,
-    imageURL: "./image/cloth2.jpg",
+    image: cloth2,
     review: "Quality",
   },
   {
-    id: 3,
+    id: nanoid(),
     name: "Versace",
     price: 40,
-    imageURL: "./image/cloth3.jpg",
+    image: cloth3,
     review: "Quality",
   },
   {
-    id: 4,
+    id: nanoid(),
     name: "Versace",
     price: 40,
-    imageURL: "./image/cloth4.jpg",
+    image: cloth4,
     review: "Quality",
   },
   {
-    id: 5,
+    id: nanoid(),
     name: "Versace",
     price: 40,
-    imageURL: "./image/cloth5.jpg",
+    image: cloth5,
     review: "Quality",
   },
   {
-    id: 6,
+    id: nanoid(),
     name: "Versace",
     price: 40,
-    imageURL: "./image/cloth6.jpg",
+    image: cloth6,
     review: "Quality",
   },
   {
-    id: 7,
+    id: nanoid(),
     name: "Versace",
     price: 40,
-    imageURL: "./image/cloth7.jpg",
+    image: cloth7,
     review: "Quality",
   },
   {
-    id: 8,
+    id: nanoid(),
     name: "Versace",
     price: 40,
-    imageURL: "./image/cloth8.jpg",
+    image: cloth8,
     review: "Quality",
   },
 ];
 
-const Cloth = ({ id, name, price, imageURL, review }) => {
+const Cloth = ({ id, name, price, image, review }) => {
   const dispatch = useDispatch();
   const addToCart = () => {
     dispatch(
       cartAction.addToCart({
         name,
         id,
+        image,
         price,
       })
     );
   };
   return (
     <div className="cloth">
-      <img src={imageURL} className="cloth-img" alt="" />
+      <img src={image} className="cloth-img" alt="" />
       <h2 className="cloth-nam">{name}</h2>
       <p className="cloth-rev">{review}</p>
       <p className="cloth-price">${price}</p>
@@ -90,10 +102,11 @@ const Material = () => {
         <Cloth
           key={index}
           id={product.id}
-          imageURL={product.imageURL}
+          image={product.image}
           name={product.name}
           review={product.review}
           price={product.price}
+          data-aos="fade-up"
         />
       ))}
     </div>

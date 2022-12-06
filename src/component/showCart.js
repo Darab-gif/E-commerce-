@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { cartAction } from "../store/cart-slice";
 import "./showcart.css";
-const ShowCart = ({ id, name, quantity, price, imageURL, total }) => {
+const ShowCart = ({ id, name, quantity, price, image, total }) => {
   const dispatch = useDispatch();
   const removeHandler = () => {
     dispatch(cartAction.removeFromCart(id));
@@ -12,6 +12,7 @@ const ShowCart = ({ id, name, quantity, price, imageURL, total }) => {
     dispatch(
       cartAction.addToCart({
         name,
+        image,
         id,
         price,
       })
@@ -20,7 +21,7 @@ const ShowCart = ({ id, name, quantity, price, imageURL, total }) => {
 
   return (
     <div className="cartItem">
-      <h2> {name}</h2>
+      <img src={image} alt={name} />
       <p>${price} /-</p>
       <p>x{quantity}</p>
       <article>Total ${total}</article>

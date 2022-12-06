@@ -1,74 +1,85 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { cartAction } from "../store/cart-slice";
-
+import { cartAction } from "../../store/cart-slice";
+import { nanoid } from "@reduxjs/toolkit";
+import {
+  newshoe,
+  newShoe2,
+  shoe3,
+  shoe4,
+  shoe5,
+  shoe6,
+  shoe7,
+  shoe8,
+} from "../../assets";
 import "./shoe.css";
 const shoeOBJ = [
   {
-    id: 9,
+    id: nanoid(),
     name: "Addidas",
     price: 40,
-    imageURL: "./image/shoe1.jpg",
+    image: newshoe,
     review: "Quality",
   },
   {
-    id: 10,
+    id: nanoid(),
     name: "Prada",
     price: 40,
-    imageURL: "./image/shoe2.jpg",
+    image: newShoe2,
     review: "Quality",
   },
   {
-    id: 11,
+    id: nanoid(),
     name: "Addidas",
     price: 40,
-    imageURL: "./image/shoe3.jpg",
+    image: shoe3,
     review: "Quality",
   },
   {
-    id: 12,
+    id: nanoid(),
     name: "Addidas",
     price: 40,
-    imageURL: "./image/shoe4.jpg",
+    image: shoe4,
     review: "Quality",
   },
   {
-    id: 13,
+    id: nanoid(),
     name: "Versace",
     price: 40,
-    imageURL: "./image/shoe5.jpg",
+    image: shoe5,
     review: "Quality",
   },
   {
-    id: 14,
+    id: nanoid(),
     name: "Versace",
     price: 40,
-    imageURL: "./image/shoe6.jpeg",
+    image: shoe6,
     review: "Quality",
   },
   {
-    id: 15,
+    id: nanoid(),
     name: "Versace",
     price: 40,
-    imageURL: "./image/shoe7.jpg",
+    image: shoe7,
     review: "Quality",
   },
   {
-    id: 16,
+    id: nanoid(),
     name: "Versace",
     price: 40,
-    imageURL: "./image/shoe8.jpg",
+    image: shoe8,
     review: "Quality",
   },
 ];
 
-const Shoe = ({ id, name, price, imageURL, review }) => {
+const Shoe = ({ id, name, price, image, review }) => {
   const dispatch = useDispatch();
   const addToCart = () => {
     dispatch(
       cartAction.addToCart({
         id,
         name,
+        image,
         price,
       })
     );
@@ -76,7 +87,7 @@ const Shoe = ({ id, name, price, imageURL, review }) => {
 
   return (
     <div className="shoe">
-      <img src={imageURL} alt="" />
+      <img src={image} alt="" />
       <h2>{name}</h2>
       <p>{review}</p>
       <p>${price}</p>
@@ -92,7 +103,7 @@ const Leather = () => {
         <Shoe
           key={index}
           id={product.id}
-          imageURL={product.imageURL}
+          image={product.image}
           name={product.name}
           review={product.review}
           price={product.price}

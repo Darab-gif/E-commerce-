@@ -1,4 +1,4 @@
-.shoe-body {
+.watch-body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -6,6 +6,7 @@
   align-items: center;
   justify-items: center;
   flex-wrap: wrap;
+  margin: 0 25px;
 }
 
 button {
@@ -18,7 +19,7 @@ button {
   background-color: rgba(21, 26, 42, 0.787);
 }
 
-.shoe {
+.watch {
   margin-top: 90px;
   width: 250px;
   height: 300px;
@@ -29,26 +30,27 @@ button {
   justify-content: center;
   box-shadow: 5px 5px 10px #ccc;
 }
-.shoe img {
+.watch img {
   width: 90%;
   height: 50%;
 }
 
-.shoe h2,
+.watch h2,
 p,
 button {
   margin: 5px;
 }
-.shoe:hover {
+.watch:hover {
   box-shadow: 10px 10px 20px #ccc;
 }
+
 @media (max-width: 480px) {
-  .shoe {
+  .watch {
     display: flex;
     height: 380px;
     width: 340px;
   }
-  .shoe img {
+  .watch img {
     width: 90%;
     height: 60%;
     margin-top: 10px;
