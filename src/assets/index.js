@@ -22,14 +22,21 @@ import watch5 from "./watch5.jpg";
 import watch6 from "./watch6.jpg";
 import watch7 from "./watch7.jpg";
 import watch8 from "./watch8.jpg";
+import bg from "./background2.jpg";
+import smart1 from './smart1.jpg';
+import smart2 from './smart2.jpg';
+
 
 export {
   cloth1,
+  smart1,
+  smart2,
   cloth2,
   cloth3,
   cloth4,
   cloth5,
   cloth6,
+  bg,
   cloth7,
   cloth8,
   newshoe,

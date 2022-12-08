@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./subHeader.css";
 import { useDispatch, useSelector } from "react-redux";
 import { cartAction } from "../store/cart-slice";
+import { bg } from "../assets";
 
 library.add(faCartShopping);
 const SubHeader = () => {
@@ -16,7 +17,7 @@ const SubHeader = () => {
   return (
     <div className="subHeader">
       <div className="sub-img">
-        <img src="./image/background2.jpg" alt="Roll" />
+        <img src={bg} alt="Roll" />
       </div>
       <div className="input">
         <input type="text" placeholder="Search" />

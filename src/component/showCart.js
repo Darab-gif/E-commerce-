@@ -22,7 +22,7 @@ const ShowCart = ({ id, name, quantity, price, image, total }) => {
   return (
     <div className="cartItem">
       <img src={image} alt={name} />
-      <p>${price} /-</p>
+      <p>${price} </p>
       <p>x{quantity}</p>
       <article>Total ${total}</article>
       <div className="btn">
@@ -51,16 +51,21 @@ const CartItem = () => {
         <button className="orderBtn">Place Order</button>
       </div>
       <ul>
-        {cartItem.map((product, index) => (
-          <ShowCart
-            key={index}
-            id={product.id}
-            name={product.name}
-            quantity={product.quantity}
-            price={product.price}
-            total={product.totalPrice}
-          />
-        ))}
+        {cartItem && cartItem.length > 0 ? (
+          cartItem.map((product, index) => (
+            <ShowCart
+              key={index}
+              id={product.id}
+              image={product.image}
+              name={product.name}
+              quantity={product.quantity}
+              price={product.price}
+              total={product.totalPrice}
+            />
+          ))
+        ) : (
+          <h1 class="empty">EMPTY CART</h1>
+        )}
       </ul>
     </div>
   );

@@ -106,7 +106,6 @@ const Material = () => {
           name={product.name}
           review={product.review}
           price={product.price}
-          data-aos="fade-up"
         />
       ))}
     </div>

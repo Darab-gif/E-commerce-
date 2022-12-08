@@ -7,9 +7,9 @@ import {
   watch2,
   watch3,
   watch4,
-  watch5,
-  watch6,
   watch7,
+  smart1,
+  smart2,
   watch8,
 } from "../../assets";
 import "./watch.css";
@@ -25,7 +25,7 @@ const watchOBJ = [
     id: nanoid(),
     name: "Versace",
     price: 40,
-    image: watch2,
+    image: smart1,
     review: "Quality",
   },
   {
@@ -46,14 +46,14 @@ const watchOBJ = [
     id: nanoid(),
     name: "Versace",
     price: 40,
-    image: watch5,
+    image: smart2,
     review: "Quality",
   },
   {
     id: nanoid(),
     name: "Versace",
     price: 40,
-    image: watch6,
+    image: watch2,
     review: "Quality",
   },
   {
@@ -106,7 +106,6 @@ const WristWatch = () => {
           name={product.name}
           review={product.review}
           price={product.price}
-          data-aos="fade-up"
         />
       ))}
     </div>

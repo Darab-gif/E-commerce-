@@ -24,14 +24,14 @@ const Contact = () => {
           <FontAwesomeIcon icon={faLandmark} size="2x" />
         </span>
         <h2 className="span-h2">Address</h2>
-        <p>No 23, Sawmill Abaletu,Oyo State,Nigeria</p>
+        <p>No 23, ABC Street,Nigeria</p>
       </div>
       <div className="contact-mail">
         <span className="span-mail">
           <FontAwesomeIcon icon={faMailBulk} size="2x" />
         </span>
         <h2>Email</h2>
-        <p>rdapoahmid@gmail.com</p>
+        <p>abc@gmail.com</p>
       </div>
     </div>
   );
