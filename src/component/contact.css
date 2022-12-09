@@ -57,6 +57,9 @@
     margin-top: 20px;
     margin-left: 52px;
   }
+  .contact-add .span-h2 {
+    margin-left: 9px;
+  }
   .contact-mail {
     height: 300px;
     width: 250px;
@@ -73,6 +76,7 @@
   .span-mail p {
     margin-right: 30px;
   }
+
   .span-add {
     margin-left: 90px;
   }
