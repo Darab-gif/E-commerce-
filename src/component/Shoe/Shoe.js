@@ -2,6 +2,8 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { cartAction } from "../../store/cart-slice";
 import { nanoid } from "@reduxjs/toolkit";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {
   newshoe,
   newShoe2,
@@ -75,6 +77,9 @@ const shoeOBJ = [
 const Shoe = ({ id, name, price, image, review }) => {
   const dispatch = useDispatch();
   const addToCart = () => {
+    toast.success("Item added to the cart", {
+      closeOnClick: true,
+    });
     dispatch(
       cartAction.addToCart({
         id,
@@ -109,6 +114,7 @@ const Leather = () => {
           price={product.price}
         />
       ))}
+      <ToastContainer position="top-center" autoClose={2000} />
     </div>
   );
 };

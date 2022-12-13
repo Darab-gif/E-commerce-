@@ -1,14 +1,23 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { cartAction } from "../store/cart-slice";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./showcart.css";
 const ShowCart = ({ id, name, quantity, price, image, total }) => {
   const dispatch = useDispatch();
   const removeHandler = () => {
+    toast.warn("Item Removed", {
+      closeOnClick: true,
+      autoClose: 500,
+    });
     dispatch(cartAction.removeFromCart(id));
   };
 
   const addHandler = () => {
+    toast.success("Another Item Added", {
+      closeOnClick: true,
+    });
     dispatch(
       cartAction.addToCart({
         name,
@@ -67,6 +76,7 @@ const CartItem = () => {
           <h1 class="empty">EMPTY CART</h1>
         )}
       </ul>
+      <ToastContainer position="top-center" autoClose={2000} />
     </div>
   );
 };
