@@ -1,21 +1,25 @@
-import Layout from "./component/layout";
-import { useEffect } from "react";
-import AOS from "aos";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "aos/dist/aos.css";
+import Home from "./pages/Home";
+import CartPage from "./pages/CartPage";
+import CheckOut from "./pages/CheckOut";
 
 function App() {
-  /* const isLoggedIn = useSelector((state) => state.log.isLoggedIn);*/
+  /* const isLoggedIn = useSelector((state) => state.log.isLoggedIn);
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-  }, []);
+  }, []);*/
   return (
-    <>
-      {/*{!isLoggedIn && <Login />}
-      {isLoggedIn && <Layout />}*/}
-
-      <Layout />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<CartPage />} />
+      </Routes>
+      <Routes>
+        <Route path="/cart/order" element={<CheckOut />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

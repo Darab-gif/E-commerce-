@@ -18,7 +18,7 @@ const Layout = () => {
       <div className="layout">
         <Header />
 
-        <SubHeader />
+        <SubHeader link="cart" />
         {showCart && <CartItem />}
         <Material />
         <div

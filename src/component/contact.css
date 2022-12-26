@@ -24,13 +24,21 @@
 .span-h2 {
   margin-left: 50px;
 }
-
+.span-phone {
+  margin-left: 15px;
+}
 .contact-head {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-
+.contact-mail {
+  margin-right: 30px;
+  text-align: center;
+}
+.span-mail {
+  margin-left: 15px;
+}
 @media (max-width: 480px) {
   .contact-head {
     display: flex;

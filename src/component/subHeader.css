@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-input[type="text"] {
+.input_text {
   width: 350px;
   border: 1px solid cyan;
   font-weight: 100;
@@ -14,11 +14,11 @@ input[type="text"] {
   padding: 15px;
 }
 
-input[type="text"]:focus {
+.input_text:focus {
   border: 2px solid cyan;
 }
 
-input[type="button"] {
+.input_button {
   width: 90px;
   background: #000;
   color: #fff;

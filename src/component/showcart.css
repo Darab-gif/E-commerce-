@@ -11,10 +11,24 @@
   color: #fbeaeb;
   margin-top: 5px;
 }
-.empty {
+.emptyContainer {
+  text-align: center;
+  margin-top: 90px;
+}
+.emptyContainer h1 {
   text-align: center;
   margin-top: 30px;
   font-size: 30px;
+}
+.emptyContainer .icon {
+  font-size: 180px;
+}
+.emptyContainer button {
+  background-color: rgb(0, 210, 10);
+  color: #fff;
+  font-weight: 700;
+  margin-top: 40px;
+  padding: 10px 20px;
 }
 .cartItem img {
   height: 100px;
@@ -38,15 +52,13 @@
 }
 
 .cart-container {
-  border: 1px solid black;
   border-radius: 10px;
   margin: 20px;
-  height: 400px;
   padding: 10px;
-  overflow: scroll;
-  overflow-x: hidden;
 }
-
+.cart-container h2 {
+  text-align: center;
+}
 @media (max-width: 480px) {
   .total-price {
     text-align: right;

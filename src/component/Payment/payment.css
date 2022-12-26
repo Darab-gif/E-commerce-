@@ -1,0 +1,30 @@
+.payment_container {
+  height: 30rem;
+  width: 30rem;
+  box-shadow: 5px 5px 5px 5px #ccc;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.payment_form {
+  margin-top: 45px;
+}
+.payment_form input {
+  margin: 12px 0;
+  padding: 12px 20px;
+  width: 80%;
+  border-radius: 2px;
+  border: 2px solid #00ff20;
+}
+
+@media (max-width: 480px) {
+  .payment_container {
+    width: 21rem;
+    height: 27rem;
+  }
+  .payment_form {
+    margin-top: 40px;
+  }
+}
