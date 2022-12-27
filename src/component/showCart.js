@@ -60,14 +60,14 @@ const CartItem = () => {
 
       <ul>
         {cartItem && cartItem.length > 0 ? (
-          cartItem.map((product, index) => (
-            <div>
-              <div className="total-price">
-                <h3>Total: ${totals}</h3>
-                <Link to="order">
-                  <button className="orderBtn">Place Order</button>
-                </Link>
-              </div>
+          <div>
+            <div className="total-price">
+              <h3>Total: ${totals}</h3>
+              <Link to="order">
+                <button className="orderBtn">Place Order</button>
+              </Link>
+            </div>
+            {cartItem.map((product, index) => (
               <ShowCart
                 key={index}
                 id={product.id}
@@ -77,8 +77,8 @@ const CartItem = () => {
                 price={product.price}
                 total={product.totalPrice}
               />
-            </div>
-          ))
+            ))}
+          </div>
         ) : (
           <div className="emptyContainer">
             <h1 className="empty">
